@@ -5,7 +5,6 @@
     - colores
     - tipografia
 */
-
 * {
     box-sizing: border-box;
 }
@@ -32,6 +31,8 @@ a {
     text-decoration: none;
     color: inherit; /*HEREDE EL VALOR DEL PADRE*/
 }
+
+
 
 /*
 Header
@@ -61,12 +62,16 @@ Header
     display: flex;
 }
 
-.header ul li {
+.header li {
     margin: 10px;
     background: blue;
     padding: 10px;
     border-radius: 20px;
 }
+
+/*ASIDE*/
+
+/*SECTION*/
 
 
 

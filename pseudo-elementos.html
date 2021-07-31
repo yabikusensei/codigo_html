@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECTORES</title>
+    <style>
+        p::first-letter {
+            font-size: 52px;
+        }
+
+        p::first-line {
+            background: red;
+        }
+
+        *::selection {
+            background: pink;
+        }
+
+        div {
+            background: red;
+            width: 100px;
+            height: 100px;
+            transition: all ease 1s;
+        }
+
+        div:hover {
+            transform: rotate(10turn);
+        }
+
+        div::after {
+            content: 'AFTER';
+            width: 20px;
+            height: 20px;
+            background: white;
+        }
+
+        div::before {
+            content: 'BEFORE';
+            width: 20px;
+            height: 20px;
+            background: white;
+        }
+
+        input:focus {
+            outline: none;
+            box-shadow: 0 0 10px rgb(168, 168, 168);
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        a:link {
+            color: orange;
+        }
+
+        a:visited {
+            color: orange;
+        }
+
+        a:active {
+            color: red;
+        }
+
+        a[href="https://www.google.com"] {
+            color: red;
+        }
+
+        a[href="https://www.facebook.com"] {
+            color: blue;
+        }
+
+        a[href="https://www.linkedin.com"] {
+            color: green;
+        }
+
+        input[type="text"] {
+            padding: 20px;
+            border: 2px solid red;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam magni alias consequatur, laboriosam officiis
+        sequi sit accusamus quo sed dolorem aliquam nisi est voluptate fugiat nemo aliquid saepe suscipit recusandae!
+    </p>
+
+
+    <div></div>
+    <br>
+    <input type="text">
+    <input type="checkbox">
+    <input type="radio">
+
+    <a href="https://www.google.com">google</a>
+    <a href="https://www.facebook.com">facebook</a>
+    <a href="https://www.linkedin.com">linkedin</a>
+</body>
+
+</html>
