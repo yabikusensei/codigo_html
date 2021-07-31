@@ -1,0 +1,24 @@
+/*
+    REGLAS GLOBALES
+    - tamanio de titulos
+    - tamanio de parrafos
+    - colores
+    - tipografia
+*/
+body {
+ font-family: 'arial';
+ font-size: 13px;
+ color: #0d0d0d;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 22px;
+}
