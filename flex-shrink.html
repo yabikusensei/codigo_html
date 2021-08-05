@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX SHRINK</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .flex div:nth-child(odd) {
+            background: red;
+        }
+
+        .flex div:nth-child(even) {
+            background: yellow;
+        }
+
+        .flex {
+            /* padding: 20px; */
+            /* height: 400px; */
+            display: flex;
+
+            /* flex-wrap: wrap; */
+            background: pink;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 200px;
+        }
+
+        .flex div {
+            width: 100px;
+
+            /*
+                espacio debo = 200px
+                unit decrecimiento = 200/5 = 40 * 1
+               total = unit decrecimiento - ancho
+            */
+        }
+
+        .flex div:last-child {
+            flex-shrink: 2;
+            order: -1;
+        }
+
+        .flex div:nth-child(3) {
+            order: 4;
+        }
+
+        .flex div:nth-child(2) {
+            order: 3;
+        }
+    </style>
+    <div class="flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+
+</html>

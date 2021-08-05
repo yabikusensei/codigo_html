@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .flex div:nth-child(odd) {
+            background: red;
+        }
+
+        .flex div:nth-child(even) {
+            background: yellow;
+        }
+
+        .flex {
+            padding: 20px;
+            display: flex;
+            background: pink;
+            /*flex-start
+            flex-end
+            center
+            space-between
+            space-around
+            space-evenly*/
+            justify-content: flex-start;
+        }
+
+        /* .inline-flex {
+            display: inline-flex;
+        } */
+    </style>
+
+
+
+
+    <!-- <div class="flex inline-flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div> -->
+    <!-- <br>
+    <br> -->
+    <div class="flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <br><br>
+    <style>
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        header {
+            background: red;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 200px;
+            padding: 20px;
+        }
+
+        header ul {
+            display: flex;
+        }
+
+        header li {
+            margin: 0 10px;
+        }
+    </style>
+    <header>
+        <a href="">LOGO</a>
+        <nav>
+            <ul>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Servicios</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br>
+
+    <style>
+        .flex-dos {
+            height: 300px;
+            flex-direction: column;
+        }
+    </style>
+
+    <div class="flex flex-dos">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+
+</html>

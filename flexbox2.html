@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .flex div:nth-child(odd) {
+            background: red;
+        }
+
+        .flex div:nth-child(even) {
+            background: yellow;
+        }
+
+        .flex {
+            /* padding: 20px; */
+            /* height: 400px; */
+            display: flex;
+
+            /* flex-wrap: wrap; */
+            background: pink;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .flex div {
+            width: 50%;
+        }
+
+        /* .flex div:nth-child(2) {
+            align-self: stretch;
+        }
+
+        .flex div:nth-child(4) {
+            align-self: stretch;
+        }
+
+        .flex div:nth-child(6) {
+            align-self: stretch;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorum, quo voluptatem culpa facere error,
+                fuga aperiam necessitatibus repellendus animi et cupiditate optio impedit ullam nihil exercitationem id
+                autem iste!</p>
+        </div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <br>
+    <style>
+        .flex-pruebas {
+            height: 200px;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            align-content: center;
+        }
+
+        .flex-pruebas {
+
+        }
+    </style>
+    <div class="flex flex-pruebas">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+
+    <br>
+    <br>
+
+    <style>
+
+        .flex-grow {
+            width: 200px;
+        }
+
+        .flex-grow div{
+            width: 20px;
+        }
+
+        .flex-grow div:nth-child(3) {
+            flex-grow: 2; /*30*2 + 20*/
+        }
+
+        .flex-grow div:last-child {
+            flex-grow:2; /*30*2 + 20*/
+
+            /*
+                espacio disponible = 120px / 4  = 30 * unit-grow + ancho
+            */
+        }
+    </style>
+    <div class="flex flex-grow">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+
+</html>
