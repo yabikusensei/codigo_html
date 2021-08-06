@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSGRID</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .grid {
+            display: grid;
+            /* grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 100px 200px auto; */
+            grid-template: 200px 200px auto / 25% 25% 25% 25%;
+            /*la manera corta*/
+            background: red;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .grid div {
+            border: 1px solid orange;
+        }
+
+        .grid div:nth-child(1) {
+            overflow: scroll;
+        }
+
+        .grid div:nth-child(odd) {
+            background: yellow;
+        }
+
+        .grid div:nth-child(even) {
+            background: green;
+        }
+    </style>
+    <div class="grid" style="display: none;">
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam illum corporis, praesentium omnis ipsum
+            nostrum porro, optio eum quis commodi soluta repellendus libero sint impedit nobis vel provident repudiandae
+            animi.</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+
+    <style>
+        .areas {
+            color: white;
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 200px 1fr 1fr 1fr;
+            grid-template-rows: 100px 1fr 100px;
+            grid-template-areas: "header header header header"
+                "aside main main main"
+                "footer footer footer footer";
+        }
+        .areas header {
+            grid-area: header;
+            background: red;
+        }
+        .areas aside {
+            grid-area: aside;
+            background: green;
+        }
+        .areas main {
+            grid-area: main;
+            background: blue;
+        }
+        .areas footer {
+            grid-area: footer;
+            background: pink;
+        }
+        .grid-interna {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            /* grid-gap: 20px; */
+            grid-row-gap: 20px;
+            grid-column-gap: 20px;
+        }
+        .wrapper {
+            max-width: 1440px;
+            margin: auto;
+        }
+        .grid-interna img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+        .grid-interna article {
+            border: 1px solid #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .grid-interna article:hover {
+            background: black;
+            cursor: pointer;
+        }
+        .grid-interna article>div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #fff;
+        }
+        .grid-interna article p {
+            margin-bottom: 20px;
+        }
+    </style>
+    <div class="wrapper">
+        <div class="areas">
+            <header>HEADER</header>
+            <aside>ASIDE</aside>
+            <main>
+                <div class="grid-interna">
+
+
+                    <article>
+                        <div>
+                            <h2>Titulo</h2>
+                            <time>27/10/2220</time>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur enim dolore nihil id
+                            praesentium, quae autem quasi, rerum fugit similique quia incidunt libero veritatis iusto
+                            unde
+                            excepturi non culpa rem.</p>
+                        <img src="https://picsum.photos/200/300" alt="">
+                    </article>
+                    <article>
+                        <div>
+                            <h2>Titulo</h2>
+                            <time>27/10/2220</time>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur enim dolore nihil id
+                            praesentium, quae autem quasi, rerum fugit similique quia incidunt libero veritatis iusto
+                            unde
+                            excepturi non culpa rem.</p>
+                        <img src="https://picsum.photos/200/300" alt="">
+                    </article>
+                    <article>
+                        <div>
+                            <h2>Titulo</h2>
+                            <time>27/10/2220</time>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur enim dolore nihil id
+                            praesentium, quae autem quasi, rerum fugit similique quia incidunt libero veritatis iusto
+                            unde
+                            excepturi non culpa rem.</p>
+                        <img src="https://picsum.photos/200/300" alt="">
+                    </article>
+                    <article>
+                        <div>
+                            <h2>Titulo</h2>
+                            <time>27/10/2220</time>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur enim dolore nihil id
+                            praesentium, quae autem quasi, rerum fugit similique quia incidunt libero veritatis iusto
+                            unde
+                            excepturi non culpa rem.</p>
+                        <img src="https://picsum.photos/200/300" alt="">
+                    </article>
+                    <article>
+                        <div>
+                            <h2>Titulo</h2>
+                            <time>27/10/2220</time>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur enim dolore nihil id
+                            praesentium, quae autem quasi, rerum fugit similique quia incidunt libero veritatis iusto
+                            unde
+                            excepturi non culpa rem.</p>
+                        <img src="https://picsum.photos/200/300" alt="">
+                    </article>
+                    <article>
+                        <div>
+                            <h2>Titulo</h2>
+                            <time>27/10/2220</time>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur enim dolore nihil id
+                            praesentium, quae autem quasi, rerum fugit similique quia incidunt libero veritatis iusto
+                            unde
+                            excepturi non culpa rem.</p>
+                        <img src="https://picsum.photos/200/300" alt="">
+                    </article>
+                    <article>
+                        <div>
+                            <h2>Titulo</h2>
+                            <time>27/10/2220</time>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur enim dolore nihil id
+                            praesentium, quae autem quasi, rerum fugit similique quia incidunt libero veritatis iusto
+                            unde
+                            excepturi non culpa rem.</p>
+                        <img src="https://picsum.photos/200/300" alt="">
+                    </article>
+                    <article>
+                        <div>
+                            <h2>Titulo</h2>
+                            <time>27/10/2220</time>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur enim dolore nihil id
+                            praesentium, quae autem quasi, rerum fugit similique quia incidunt libero veritatis iusto
+                            unde
+                            excepturi non culpa rem.</p>
+                        <img src="https://picsum.photos/200/300" alt="">
+                    </article>
+                </div>
+            </main>
+            <footer>FOOTER</footer>
+        </div>
+    </div>
+</body>
+
+</html>
