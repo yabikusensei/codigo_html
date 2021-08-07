@@ -55,6 +55,7 @@ LAYOUT
     max-width: 960px;
     width: 100%;
     margin: auto;
+    overflow: hidden;
 }
 
 /*
@@ -118,6 +119,7 @@ BANNER
 
 .skills .row {
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .skills .row:last-child {
@@ -229,4 +231,68 @@ PORTFOLIO
 
 .contact .item.no-padding {
     padding: 0;
+}
+
+/*
+RESPONSIVE
+/*
+    XLARGE: 1480PX
+    LARGE: 1280px,
+    MEDIUM: 980px,
+    SMALL: 680px,
+    XSMALL: 420px 
+*/
+
+/**/
+@media(min-width:0) and (max-width:980px) {
+    /*
+    GLOBALES
+    */
+    section h2 {
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+    }
+
+    /*
+        BANNER
+    */
+    .banner h1 {
+        top: 10px;
+        left: 10px;
+        font-size: 3.2rem;
+        text-align: left;
+    }
+
+    .banner img {
+        height: 434px;
+        object-fit: cover;
+    }
+
+    .banner h2 {
+        font-size: 18px;
+        bottom: 50px;
+        right:50px;
+        margin-bottom: 0;
+        max-width: 100%;
+    }
+
+    /*
+        SKILLS
+    */
+    .skills {
+        padding: 20px 15px 40px;
+    }
+
+    .skills .item:first-child {
+        margin-bottom: 20px;
+    }
+    
+    .skills .item {
+        width: 100%;
+      
+    }
+
+    .skills .item:last-child {
+        padding: 0;
+    }
 }

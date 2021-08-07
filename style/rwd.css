@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial;
+}
+
+
+div {
+    background: red;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+div h2 {
+    font-size: 62px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:980px) {
+    div {
+        background: blue;
+        color: white;
+    }
+}
+
+@media (max-width:680px) {
+    div {
+        background: blue;
+        color: white;
+    }
+
+    div h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width:600px),
+(min-height:200px) {
+    div {
+        background: brown;
+        color: white;
+    }
+}
+
+@media not all and (max-width:600px) {
+    div {
+        background: chartreuse;
+    }
+}
